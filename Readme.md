@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Andrew Aleksandrovich](https://up.htmlacademy.ru/htmlcss/30/user/1106339).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
