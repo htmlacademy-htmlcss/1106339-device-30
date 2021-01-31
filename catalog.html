@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин Девайсов</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- Не забыть сделать ссылку на главную страницу из каталога -->
+      <a><img src="index.html" width="20" height="20" alt="Логотип Device"></a>
+
+      <form>
+        <input type="search" placeholder="Поиск по сайу">
+      </form>
+      <a href="blank.html">Войти</a>
+      <ul>
+        <li>
+          <a href="blank.html">Сравнить</a>
+        </li>
+        <li>
+          <a href="blank.html">Корзина</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="blank.html">Доставка</a>
+        </li>
+        <li>
+          <a href="blank.html">Гарантия</a>
+        </li>
+        <li>
+          <a href="blank.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- будет заголовок будет скрыт в css -->
+    <h1>Каталог интернет-магазина Device</h1>
+    <section>
+      <h2>Моноподы для селфи</h2>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог товаров </a>
+        </li>
+        <li>
+          <a href="catalog.html">Моноподы для селфи</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h2>Фильтр: </h2>
+        </li>
+        <li>
+          <h2>Сортировка:</h2>
+        </li>
+        <li><a>По цене</a></li>
+        <li><a href="blank.html">По типу</a></li>
+        <li><a href="blank.html">По популярности</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <!-- Загаловок будет убран с помощью css -->
+      <h2>Форма фильтра</h2>
+      <form method="get" action="https://echo.htmlacademy.ru/" id="filter">
+        <fieldset form="filter">
+          <legend> Стоимость </legend>
+          <input type="range" min="0" max=10000 step=1 value="50">
+        </fieldset>
+        <fieldset form="filter">
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <label for="black">Чёрный</label>
+              <input type="checkbox" id="black" name="black" checked>
+            </li>
+            <li>
+              <label for="white">Белый</label>
+              <input type="checkbox" id="white" name="white">
+            </li>
+            <li>
+              <label for="blue">Синий</label>
+              <input type="checkbox" id="blue" name="blue" checked>
+            </li>
+            <li>
+              <label for="red">Красный</label>
+              <input type="checkbox" id="red" name="red" checked>
+            </li>
+            <li>
+              <label for="rose">Розовый</label>
+              <input type="checkbox" id="rose" name="rose">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset form="filter">
+          <legend>Bluetooth</legend>
+          <!-- здесь по макету радио инпуты , но если человеку беез разницы есть или нет блютус и ему нужно вывести все ? -->
+          <ul>
+            <li>
+              <label for="yes">Есть</label>
+              <input type="checkbox" name="yes" id="yes" checked>
+            </li>
+            <li>
+              <label for="no">Нет</label>
+              <input type="checkbox" name="no" id="no">
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form>
+    </section>
+      <section>
+        <h2>Товары</h2>
+        <ol>
+          <li>
+            <a href="blank.html">
+              <dl>
+                <dt>
+                  Любительская селфи-палка
+                </dt>
+                <dd>1 100 руб.</dd>
+              </dl>
+              <img src="#" width="20" height="20" alt="Любительская селфи-палка">
+            </a>
+            <button type="button" name="amateur">В корзину</button>
+            <button type="button" name="comparison ">Добавить к сравнению</button>
+          </li>
+          <li>
+            <a href="blank.html">
+              <dl>
+                <dt>
+                  Профессиональная селфи-палка
+                </dt>
+                <dd>1 500 руб.</dd>
+              </dl>
+              <img src="#" width="20" height="20" alt="Любительская селфи-палка">
+            </a>
+            <button type="button" name="amateur">В корзину</button>
+            <button type="button" name="comparison ">Добавить к сравнению</button>
+          </li>
+          <li>
+            <a href="blank.html">
+              <dl>
+                <dt>
+                  Непотопляемая селфи-палка
+                </dt>
+                <dd>1 500 руб.</dd>
+              </dl>
+              <img src="#" width="20" height="20" alt="Любительская селфи-палка">
+            </a>
+            <button type="button" name="amateur">В корзину</button>
+            <button type="button" name="comparison ">Добавить к сравнению</button>
+          </li>
+          <li>
+            <a href="blank.html">
+              <dl>
+                <dt>
+                  Селфи-палка «Следуй за мной»
+                </dt>
+                <dd>1 900 руб.</dd>
+              </dl>
+              <img src="#" width="20" height="20" alt="Любительская селфи-палка">
+            </a>
+            <button type="button" name="amateur">В корзину</button>
+            <button type="button" name="comparison ">Добавить к сравнению</button>
+          </li>
+        </ol>
+        <ul>
+          <li><button type="button">1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+        </ul>
+      </section>
+
+  </main>
+
+  <footer>
+    <section>
+      <h2>Дополнительная информация</h2>
+      <img src="#" width="20" height="20" alt="20" />
+      <address>г. Москва, ул. Строителей, 15 </address>
+      <ul>
+        <li><a href="index.html">доставка</a></li>
+        <li><a href="catalog.html">гарантия</a></li>
+        <li><a href="index.html">контакты</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="blank.html"><img src="#" width="20" height="20" alt="#"></a></li>
+        <li><a href="blank.html"><img src="#" width="20" height="20" alt="#"></a></li>
+        <li><a href="blank.html"><img src="#" width="20" height="20" alt="#"></a></li>
+      </ul>
+
+      <ul>
+        <li><a href="index.html">Войти</a></li>
+        <li><a href="catalog.html">Сравнить</a></li>
+        <li><a href="index.html">Корзина</a></li>
+      </ul>
+      <p>Телефон:<a href="tel:+74954959595">+7(495) 495-95-95</a></p>
+    </section>
+
+  </footer>
+
+  <section>
+    <!-- Заголовок уберется в цсс -->
+    <h2>Всплывающая форма </h2>
+    <form action="#" method="post">
+      <label for="name">Ваше имя:</label>
+      <input id="name" placeholder="Имя Фамилия">
+      <label for="email">Ваш e-mail:</label>
+      <input id="email" type="email" placeholder="email@example.com">
+      <label for="textMail">Текст письма: </label>
+      <textarea id="textMail" placeholder="В свободной форме"></textarea>
+      <input id="submith" type="submit" value="Отправить">
+      <button type="button">Закрыть</button>
+    </form>
+
+  </section>
+
+
+</body>
+
+</html>
