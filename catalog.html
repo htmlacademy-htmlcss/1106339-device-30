@@ -44,33 +44,21 @@
     <section>
       <h2>Моноподы для селфи</h2>
       <nav>
-      <ul>
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="catalog.html">Каталог товаров </a>
-        </li>
-        <li>
-          Моноподы для селфи
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог товаров </a>
+          </li>
+          <li>
+            Моноподы для селфи
+          </li>
+        </ul>
       </nav>
-      <ul>
-        <li>
-          <h2>Фильтр: </h2>
-        </li>
-        <li>
-          <h2>Сортировка:</h2>
-        </li>
-        <li><a>По цене</a></li>
-        <li><a href="blank.html">По типу</a></li>
-        <li><a href="blank.html">По популярности</a></li>
-      </ul>
     </section>
     <section>
-      <!-- Загаловок будет убран с помощью css -->
-      <h2>Форма фильтра</h2>
+      <h2>Фильтр:</h2>
       <form method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
           <legend> Стоимость </legend>
@@ -105,11 +93,11 @@
           <legend>Bluetooth</legend>
           <ul>
             <li>
-              <input type="checkbox" name="yes" id="yes" checked>
+              <input type="radio" name="radio" id="yes" checked>
               <label for="yes">Есть</label>
             </li>
             <li>
-              <input type="checkbox" name="no" id="no">
+              <input type="radio" name="radio" id="no">
               <label for="no">Нет</label>
             </li>
           </ul>
@@ -117,31 +105,40 @@
         <input type="submit" value="Показать">
       </form>
     </section>
+    <aside>
+      <ul>
+        <li>
+          <h2>Сортировка:</h2>
+        </li>
+        <li><a>По цене</a></li>
+        <li><a href="blank.html">По типу</a></li>
+        <li><a href="blank.html">По популярности</a></li>
+      </ul>
+    </aside>
     <section>
       <h2>Товары</h2>
-      <ol>
+      <ul>
         <li>
           <a href="blank.html">
             <dl>
               <dt>
                 Любительская селфи-палка
               </dt>
-              <dd>1 100 руб.</dd>
-            </dl>
-            <img src="#" width="20" height="20" alt="Любительская селфи-палка">
           </a>
-          <button type="button" name="amateur">В корзину</button>
-          <button type="button" name="comparison ">Добавить к сравнению</button>
+          <dd>1 100 руб.</dd>
+          </dl>
+          <img src="#" width="20" height="20" alt="Любительская селфи-палка">
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
         <li>
           <a href="blank.html">
             <dl>
-              <dt>
-                Профессиональная селфи-палка</dt>
-              <dd>1 500 руб.</dd>
-            </dl>
-            <img src="#" width="20" height="20" alt="Профессиональная селфи-палка">
+              <dt>Профессиональная селфи-палка</dt>
           </a>
+          <dd>1 500 руб.</dd>
+          </dl>
+          <img src="#" width="20" height="20" alt="Профессиональная селфи-палка">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
@@ -149,30 +146,34 @@
           <a href="blank.html">
             <dl>
               <dt>Непотопляемая селфи-палка</dt>
-              <dd>1 500 руб.</dd>
-            </dl>
-            <img src="#" width="20" height="20" alt="Непотопляемая селфи-палка">
           </a>
-          <button type="button" name="amateur">В корзину</button>
-          <button type="button" name="comparison ">Добавить к сравнению</button>
+          <dd>1 500 руб.</dd>
+          </dl>
+          <img src="#" width="20" height="20" alt="Непотопляемая селфи-палка">
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
         <li>
           <a href="blank.html">
             <dl>
               <dt>Селфи-палка «Следуй за мной»</dt>
-              <dd>1 900 руб.</dd>
-            </dl>
-            <img src="#" width="20" height="20" alt="Селфи-палка «Следуй за мной»">
           </a>
+          <dd>1 900 руб.</dd>
+          </dl>
+          <img src="#" width="20" height="20" alt="Селфи-палка «Следуй за мной»">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
-      </ol>
-      <ul>
-        <li><button type="button">1</button></li>
-        <li><button type="button">2</button></li>
-        <li><button type="button">3</button></li>
       </ul>
+      <nav>
+        <a>Назад</a>
+        <ul>
+          <li><a>1</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+        </ul>
+        <a href="blank.html">Вперед</a>
+      </nav>
     </section>
 
   </main>
