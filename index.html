@@ -8,6 +8,8 @@
   <link rel="icon" href="img/faviconsvg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -19,7 +21,7 @@
         <input class="search-form__input" type="search" placeholder="Поиск по сайу">
         <button class="search-form__button" type="submit">Найти</button>
       </form>
-      <a class="main-header__login login " href="blank.html">Войти</a>
+      <a class="main-header__item  login " href="blank.html">Войти</a>
       <ul class="header-navigation">
         <li>
           <a class="main-header__item compare" href="blank.html">Сравнить</a>
@@ -28,7 +30,7 @@
           <a class="main-header__item basket" href="blank.html">Корзина</a>
         </li>
         <li>
-          <a class="main-header__item catalog" href="catalog.html">Каталог товаров</a>
+          <a class="button-link catalog" href="catalog.html">Каталог товаров</a>
         </li>
         <li>
           <a class="button-link" href="blank.html">Доставка</a>
@@ -102,14 +104,14 @@
     <section class="services">
       <!-- Этот заголовок скрываем в css  -->
       <h2 class="visually-hidden">Перечисление разделов товаров магазина </h2>
-      <ul class="services-list">
-        <li class="fservices-list__item">
+      <ul class="services-list text-h2" >
+        <li class="services-list__item">
           <a class="services-list__img" href="catalog.html">
             <!-- <img src="img/index/svg/vr.svg" width="97" height="55" alt=""> -->
             Виртуальная реальность
           </a>
         </li>
-        <li class="services-list__item">
+        <li class="services-list__item ">
           <a class="services-list__img" href="catalog.html">
             <!-- <img src="img/index/svg/mobile.svg" width="86" height="117" alt=""> -->
             Моноподы для селфи
@@ -247,7 +249,7 @@
       alt="Логотип DEVICE" />
     <address class="main-footer__contacts">г. Москва, ул. Строителей, 15 </address>
     <ul class="main-footer__services-button button-link">
-      <li><a href="index.html">доставка</a></li>
+      <li><a href="index.html ">доставка</a></li>
       <li><a href="catalog.html">гарантия</a></li>
       <li><a href="index.html">контакты</a></li>
     </ul>

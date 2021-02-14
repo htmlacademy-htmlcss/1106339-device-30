@@ -1,0 +1,129 @@
+/* fonts */
+
+@font-face {
+  font-family: "gilroy extra bold";
+  src: local("gilroy extra bold"), url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy light";
+  src: local("gilroy light"), url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: local("open sans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open sans light";
+  src: local("open sans light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-white: #FFFFFF;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --special-yellow: #F7E296;
+  --special-green: #91C92F;
+  --special-yellow-dark: #F0C52E;
+  --status: #f6dada;
+}
+
+
+.page-body {
+  width: 1160px;
+margin:140px;
+  margin-top: 40px;
+}
+.main-header{
+  background-color: var(--special-yellow);
+  padding: 44px 60px 0 60px;
+}
+
+.visually-hidden{
+  display: none;
+}
+.main-header__item{
+  font-family: open sans light;
+  font-size: 15px;
+  text-decoration: none;
+}
+.button-link {
+font-family: gilroy extra bold ;
+font-size: 18px ;
+text-decoration: none;
+
+}
+.main-slider__list{
+  margin-top: -100px;
+}
+.services-list__img{
+ text-decoration: none;
+}
+.text-h1{
+  font-family: gilroy extra bold ;
+}
+.text-h2{
+  text-decoration: none;
+  font-family: gilroy extra bold ;
+
+}
+.text-h3 {
+  font-family: open sans light;
+}
+.text{
+  font-family: open sans light;
+}
+.item-specifications{
+  font-family: gilroy light;
+}
+.item-specifications__subtitle{
+  font-size: 13px;
+}
+.item-specifications__value{
+  font-size: 36px;
+}
+.features__subtitle{
+  font-size: 15px;
+}
+.features__title .information__title{
+  font-size:47px ;
+}
+.information__subtitle {
+  font-size: 15px;
+}
+.features__subtitle {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 10%;
+}
+.button-link{
+  text-align: center;
+  border: none;
+  background-color: white;
+  color:black;
+  text-decoration: none;
+}
+.button-link:hover{
+  color:var(--special-yellow-dark);
+  background-color:black ;
+
+}
+.main-footer{
+  background-color: var(--basic-dark);
+}
+
