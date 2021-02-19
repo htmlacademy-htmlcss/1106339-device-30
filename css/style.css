@@ -37,8 +37,8 @@
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --status: #F6DADA;
-  --common-Gilroy: "Gilroy", "Arial", "Verdana";
-  --common-OpenSans: "Open Sans", "Arial", "Verdana";
+  --common-Gilroy: "Gilroy", "Arial", "Verdana", sans-serif;
+  --common-OpenSans: "Open Sans", "Arial", "Verdana", sans-serif;
 }
 
 /* Убираем лишнее (Данные из учебника) */
@@ -53,6 +53,18 @@ img {
 
 a {
   text-decoration: none
+}
+
+/* Нормализация стилей  */
+
+.image {
+  vertical-align: middle;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Скрываем заголовки section (Принятые свойства для данного класса) */
@@ -200,7 +212,7 @@ a {
   background-color: var(--basic-dark);
 }
 
-.main-footer__contacts {
+.main-footer__contacts, .main-footer__contacts>a {
   font-family: var(--common-OpenSans);
   color: var(--basic-white);
   opacity: 70%;
@@ -208,11 +220,11 @@ a {
   line-height: 20px;
 }
 
-.main-footer__contacts>a {
+.client-navigation__item, .main-footer__client-button {
   color: var(--basic-white);
 }
 
-.main-footer__navigation>li>a {
+.main-footer__navigation>.client-navigation__item {
   color: var(--basic-white);
 }
 
@@ -220,76 +232,117 @@ a {
   opacity: 70%;
 }
 
-/* !!!!!!НЕ ПРОВЕРЯЙ!!!!!! */
+/* Страница catalog.html */
 
-/* ВТОРАЯ СТРАНИЦА - КАТАЛОГ */
+.crumbs-list :visited {
+  opacity: 100%;
+  color: var(--basic-black);
+}
 
-/* .main-crumbs>.text-h1 {
+/* section container-center */
+
+.main-crumbs__title {
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  color: var(--basic-black)
 }
 
 .crumbs-list {
+  font-family: var(--common-OpenSans);
+  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   opacity: 30%;
+  color: var(--basic-black);
 }
 
-.crumbs-list__item {
-  text-decoration: none;
-  color: black;
+/* section "filter" */
+
+.filter {
+  background-color: var(--basic-grey-light);
 }
 
-/* ФИЛЬТР */
-
-/* .filter-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.filter-title {
+  font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-} */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
-/*
-.filter {
-  background-size: width 468 px;
+.filter__subtitle {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filter__border-none>fieldset {
   border: none;
 }
 
 .filter__color {
-  border: none;
-}
-
-.filter__cost {
-  border: none;
-}
-
-.filter__subtitle {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-  font-family: gilroy extra bold;
-}
-
-.filter-list {
+  font-family: var(--common-OpenSans);
   font-size: 14px;
   line-height: 19px;
-  font-family: open sans light;
 }
 
-.none {
-  text-decoration: none;
-  color: #000000;
+.filter-radio {
+  font-family: var(--common-OpenSans);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* НЕ УДАЕТСЯУБРАТЬ ПРОЗРАЧНОСТЬ  */
+
+.crumbs-list .crumbs-list_activated {
+  opacity: 100%;
+}
+
+/* раздел товаров */
+
+.products-name {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
 }
 
 .products-price {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  font-family: "gilroy light";
 }
 
-.products-name {
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
-} */
+.products-list__comparison {
+  font-family: var(--common-OpenSans);
+  font-weight: 300;
+}
+
+.products-pages {
+  background-color: var(--basic-grey-light);
+}
+
+.product-page__items {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 30%;
+}
+
+/* не понимаю как  сделать ..непрозрачность */
+
+.product-page__items .first>a {
+  opacity: 100%;
+}
+
+.products-page__link-back, .products-page__link-next {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
