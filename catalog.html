@@ -51,22 +51,22 @@
     <section class="main-crumbs">
       <h2 class="main-crumbs__title">Моноподы для селфи</h2>
       <nav>
-        <ul class="crumbs-list">
+        <ul class="crumbs-links">
           <li>
-            <a class="crumbs-list__item" href="index.html">Главная</a>
+            <a class="crumbs-link__item" href="index.html">Главная</a>
           </li>
           <li>
-            <a class="crumbs-list__item" href="catalog.html">Каталог товаров </a>
+            <a class="crumbs-link__item" href="catalog.html">Каталог товаров </a>
           </li>
           <li>
-            Моноподы для селфи
+            <a class="crumbs-link__item  crumbs-link_activated" href="catalog.html"> Моноподы для селфи</a>
           </li>
         </ul>
       </nav>
     </section>
     <section class="filter">
-      <h2 class="filter-title ">Фильтр:</h2>
-      <form method="get" action="https://echo.htmlacademy.ru/">
+      <h2 class="filter-title">Фильтр:</h2>
+      <form class="filter__border-none" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class="filter__cost">
           <legend class="filter__subtitle"> Стоимость </legend>
           <input type="range" min="0" max=10000 step=1 value="50">
@@ -113,10 +113,10 @@
       </form>
       <aside class="filter-crumbs">
         <h2 class="filter-title">Сортировка:</h2>
-        <ul class="crumbs-list">
-          <li class="crumbs-list_activated"><a>По цене</a></li>
-          <li ><a class="none" href="blank.html">По типу</a></li>
-          <li><a class="none" href="blank.html">По популярности</a></li>
+        <ul class="crumbs-links">
+          <li><a class="crumbs-link__item crumbs-link_activated">По цене</a></li>
+          <li ><a class="crumbs-link__item" href="blank.html">По типу</a></li>
+          <li><a class="crumbs-link__item" href="blank.html">По популярности</a></li>
         </ul>
       </aside>
     </section>
@@ -134,7 +134,7 @@
             <dd class="products-price">1 100 руб.</dd>
           </dl>
           <button class="products-list__button button-link" type="button">В корзину</button>
-          <button class="products-list__button" type="button">Добавить к сравнению</button>
+          <button class="products-list__comparison" type="button">Добавить к сравнению</button>
         </li>
         <li class="products-list__item">
           <img src="img/catalog/jpeg/item_2.jpg" width="360" height="381" alt="Профессиональная селфи-палка">
@@ -147,7 +147,7 @@
             <dd class="products-price">1 500 руб.</dd>
           </dl>
           <button class="products-list__button button-link" type="button">В корзину</button>
-          <button class="products-list__button " type="button">Добавить к сравнению</button>
+          <button class="products-list__comparison " type="button">Добавить к сравнению</button>
         </li>
         <li class="products-list__item">
           <img src="img/catalog/jpeg/item_3.jpg" width="360" height="381" alt="Непотопляемая селфи-палка">
@@ -160,7 +160,7 @@
             <dd class="products-price">1 500 руб.</dd>
           </dl>
           <button class="products-list__button button-link" type="button">В корзину</button>
-          <button class="products-list__button " type="button">Добавить к сравнению</button>
+          <button class="products-list__comparison " type="button">Добавить к сравнению</button>
         </li>
         <li class="products-list__item">
           <img src="img/catalog/jpeg/item_4.jpg" width="360" height="381" alt="Селфи-палка «Следуй за мной»">
@@ -173,15 +173,15 @@
             <dd class="products-price">1 900 руб.</dd>
           </dl>
           <button class="products-list__button button-link" type="button">В корзину</button>
-          <button class="products-list__button " type="button">Добавить к сравнению</button>
+          <button class="products-list__comparison " type="button">Добавить к сравнению</button>
         </li>
       </ul>
-      <nav class="products-page">
+      <nav class="products-pages">
         <a class="products-page__link-back">Назад</a>
-        <ul>
-          <li class="products-page products-page_active"><a>1</a></li>
-          <li><a href="blank.html">2</a></li>
-          <li><a href="blank.html">3</a></li>
+        <ul class="product-page__items">
+          <li><a class="product-page__item products-page_active" href="blank.html">1</a></li>
+          <li><a class="product-page__item" href="blank.html">2</a></li>
+          <li><a class="product-page__item" href="blank.html">3</a></li>
         </ul>
         <a class="products-page__link-next" href="blank.html">Вперед</a>
       </nav>
@@ -194,20 +194,20 @@
     <img class="main-footer__logo logo" src="img/index/svg/logo_device.svg" width="163" height="35"
       alt="Логотип DEVICE">
     <address class="main-footer__contacts">г. Москва, ул. Строителей, 15 </address>
-    <ul class="main-footer__services-buttons">
-      <li><a class="client-navigation" href="index.html ">доставка</a></li>
-      <li><a class="client-navigation" href="catalog.html">гарантия</a></li>
-      <li><a class="client-navigation" href="index.html">контакты</a></li>
+    <ul class="main-footer__navigation client-navigation">
+      <li><a class="client-navigation__item" href="index.html ">доставка</a></li>
+      <li><a class="client-navigation__item" href="catalog.html">гарантия</a></li>
+      <li><a class="client-navigation__item" href="index.html">контакты</a></li>
     </ul>
     <ul class="main-footer__social-buttons">
       <li class="main-footer__facebook"><a href="blank.html"></a></li>
       <li class="main-footer__instagram"><a href="blank.html"></a></li>
       <li class="main-footer__twitter"><a href="blank.html"></a></li>
     </ul>
-    <ul class="main-footer__navigation client-buttons">
-      <li><a class="client-button login" href="index.html">Войти</a></li>
-      <li><a class="client-button compare" href="catalog.html">Сравнить</a></li>
-      <li><a class="client-button basket" href="index.html">Корзина</a></li>
+    <ul class="main-footer__navigation client-button">
+      <li><a class="main-footer__client-button login" href="index.html">Войти</a></li>
+      <li><a class="main-footer__client-button compare" href="catalog.html">Сравнить</a></li>
+      <li><a class="main-footer__client-button basket" href="index.html">Корзина</a></li>
     </ul>
     <p class="main-footer__contacts">Телефон:<a href="tel:+74954959595">+7(495) 495-95-95</a></p>
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/index/svg/logo_html.svg" width="27" height="34"
