@@ -234,11 +234,6 @@ a {
 
 /* Страница catalog.html */
 
-.crumbs-list :visited {
-  opacity: 100%;
-  color: var(--basic-black);
-}
-
 /* section container-center */
 
 .main-crumbs__title {
@@ -248,12 +243,24 @@ a {
   color: var(--basic-black)
 }
 
-.crumbs-list {
+.crumbs-links {
   font-family: var(--common-OpenSans);
-  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
+  color: var(--basic-black);
+  background-color: var(--basic-grey-light);
+  opacity: 100%;
+}
+
+.crumbs-link__item {
   opacity: 30%;
+}
+
+.crumbs-link_activated {
+  opacity: 100%;
+}
+
+.crumbs-link__item:visited {
   color: var(--basic-black);
 }
 
@@ -294,12 +301,6 @@ a {
   line-height: 19px;
 }
 
-/* НЕ УДАЕТСЯУБРАТЬ ПРОЗРАЧНОСТЬ  */
-
-.crumbs-list .crumbs-list_activated {
-  opacity: 100%;
-}
-
 /* раздел товаров */
 
 .products-name {
@@ -317,11 +318,14 @@ a {
 
 .products-list__comparison {
   font-family: var(--common-OpenSans);
-  font-weight: 300;
 }
 
 .products-pages {
   background-color: var(--basic-grey-light);
+}
+
+.products-pages>a:visited {
+  color: var(--basic-black)
 }
 
 .product-page__items {
@@ -330,12 +334,15 @@ a {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  opacity: 30%;
+  opacity: 100%;
 }
 
-/* не понимаю как  сделать ..непрозрачность */
+.product-page__item {
+  opacity: 30%;
+  color: var(--basic-black);
+}
 
-.product-page__items .first>a {
+.products-page_active {
   opacity: 100%;
 }
 
