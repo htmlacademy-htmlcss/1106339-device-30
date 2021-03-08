@@ -1,0 +1,355 @@
+/* fonts */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+}
+
+/* Variables (всегда единый регистр) */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-white: #FFFFFF;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --special-yellow: #F7E296;
+  --special-green: #91C92F;
+  --special-yellow-dark: #F0C52E;
+  --status: #F6DADA;
+  --common-Gilroy: "Gilroy", "Arial", "Verdana", sans-serif;
+  --common-OpenSans: "Open Sans", "Arial", "Verdana", sans-serif;
+}
+
+/* Убираем лишнее (Данные из учебника) */
+
+body {
+  margin: 0
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none
+}
+
+/* Нормализация стилей  */
+
+.image {
+  vertical-align: middle;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Скрываем заголовки section (Принятые свойства для данного класса) */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки с перечеркиванием  */
+
+.button-link {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+/* Общие кнопки header/footer */
+
+.client-button {
+  font-family: var(--common-OpenSans);
+  font-size: 15px;
+  color: var(--basic-black);
+  line-height: 20px;
+}
+
+.client-navigation {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--basic-black);
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Основное тело сайта  */
+
+.page-body {
+  font-family: var(--common-Gilroy);
+  font-weight: 300;
+}
+
+/* HEADER */
+
+.main-header {
+  background-color: var(--special-yellow);
+}
+
+/* СЛАЙДЕР */
+
+.main-slider__title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.main-slider__subtitle {
+  font-family: var(--common-OpenSans);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.item-specifications {
+  letter-spacing: 0.1em;
+}
+
+.item-specifications__subtitle {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.item-specifications__value {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+/* section SERVICES */
+
+.services-list {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+/* section features-button*/
+
+.features-buttons__item:hover {
+  color: var(--special-yellow-dark);
+  background-color: var(--basic-black);
+}
+
+/* РАЗДЕЛ features */
+
+.features__title {
+  font-size: 47px;
+  letter-spacing: 0.2em;
+  line-height: 58px;
+}
+
+.features__subtitle {
+  font-family: var(--common-OpenSans);
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+/* PARTNERS */
+
+/* INFORMATION */
+
+.information__title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.information__subtitle {
+  font-family: var(--common-OpenSans);
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us__delivery-partners {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* FOOTER */
+
+.main-footer {
+  background-color: var(--basic-dark);
+}
+
+.main-footer__contacts, .main-footer__contacts>a {
+  font-family: var(--common-OpenSans);
+  color: var(--basic-white);
+  opacity: 70%;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.client-navigation__item, .main-footer__client-button {
+  color: var(--basic-white);
+}
+
+.main-footer__navigation>.client-navigation__item {
+  color: var(--basic-white);
+}
+
+.main-footer__client-button {
+  opacity: 70%;
+}
+
+/* Страница catalog.html */
+
+/* section container-center */
+
+.main-crumbs__title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black)
+}
+
+.crumbs-links {
+  font-family: var(--common-OpenSans);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  background-color: var(--basic-grey-light);
+  opacity: 100%;
+}
+
+.crumbs-link__item {
+  opacity: 30%;
+}
+
+.crumbs-link_activated {
+  opacity: 100%;
+}
+
+.crumbs-link__item:visited {
+  color: var(--basic-black);
+}
+
+/* section "filter" */
+
+.filter {
+  background-color: var(--basic-grey-light);
+}
+
+.filter-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filter__subtitle {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filter__border-none>fieldset {
+  border: none;
+}
+
+.filter__color {
+  font-family: var(--common-OpenSans);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter-radio {
+  font-family: var(--common-OpenSans);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* раздел товаров */
+
+.products-name {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.products-price {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.products-list__comparison {
+  font-family: var(--common-OpenSans);
+}
+
+.products-pages {
+  background-color: var(--basic-grey-light);
+}
+
+.products-pages>a:visited {
+  color: var(--basic-black)
+}
+
+.product-page__items {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 100%;
+}
+
+.product-page__item {
+  opacity: 30%;
+  color: var(--basic-black);
+}
+
+.products-page_active {
+  opacity: 100%;
+}
+
+.products-page__link-back, .products-page__link-next {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
