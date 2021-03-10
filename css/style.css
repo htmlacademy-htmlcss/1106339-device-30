@@ -196,10 +196,6 @@ a {
   padding-right: 3px;
 }
 
-.header-navigation__list {
-  display: flex;
-}
-
 .client-navigation__catalog {
   grid-area: client-navigation__catalog;
   display: flex;
@@ -216,22 +212,21 @@ a {
   max-width: 502px;
   width: 100%;
   margin-right: -0.2em;
-  flex-wrap: wrap;
 }
 
-/* --Задать левый отступ элементы"гарантия"-- */
-
-.header-navigation__list li:nth-child(2) {
+.header-navigation__list .client-navigation__warranty {
   margin-left: 34px;
 }
 
-/* --Отталкивание элемента "контакты" от списка  */
-
-.header-navigation__list li:nth-child(3) {
+.header-navigation__list .client-navigation__contacts {
   margin-left: auto;
 }
 
 /* СЛАЙДЕР */
+
+.main-slider {
+  position: relative;
+}
 
 .main-slider__item_active {
   display: grid;
@@ -318,11 +313,11 @@ a {
 .main-slider__button {
   display: flex;
   position: absolute;
-  left: 1320px;
-  top: 543px;
+  left: 1000px;
+  top: 320px;
 }
 
-.main-slider__button li:not(:nth-child(3)) {
+.main-slider__button :not(.button-right) {
   padding-right: 18px;
 }
 
@@ -558,7 +553,7 @@ a {
   margin-top: 10px
 }
 
-.main-footer__client-navigation li :not(:nth-child(3)) {
+.main-footer__client-navigation li :not(.basket) {
   display: flex;
   margin-left: 65px;
   margin-top: -10px;
@@ -630,6 +625,8 @@ a {
 
 /* section container-center */
 
+/* <-------НЕ ПРОВЕРЯЙ ------> */
+
 .main-crumbs__title {
   font-weight: 800;
   font-size: 47px;
@@ -642,7 +639,6 @@ a {
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
-  /* background-color: var(--basic-grey-light); */
   opacity: 100%;
   display: flex;
 }
