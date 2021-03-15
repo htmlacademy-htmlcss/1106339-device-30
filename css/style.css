@@ -37,6 +37,7 @@
   --special-green: #91C92F;
   --special-yellow-dark: #F0C52E;
   --status: #F6DADA;
+  --button-background: rgba(238, 238, 238, 0.7);
   --common-Gilroy: "Gilroy", "Arial", "Verdana", sans-serif;
   --common-OpenSans: "Open Sans", "Arial", "Verdana", sans-serif;
 }
@@ -245,6 +246,11 @@ a {
   display: flex;
 }
 
+.header-navigation__item {
+  display: flex;
+  margin-right: auto;
+}
+
 .header-navigation__list {
   display: flex;
   max-width: 502px;
@@ -272,13 +278,25 @@ a {
   background-color: var(--special-yellow);
   display: flex;
   flex-wrap: wrap;
-  gap: 0 60px;
+  gap: 0 63px;
   padding-left: 60px;
   width: 1160px;
+  margin-left: -60px;
+  margin-top: 20px;
+  padding-bottom: 24px;
+  padding-top: 31px;
+}
+
+.header-navigation__item .drop-down-directory {
+  display: none;
+}
+
+.header-navigation__item:hover .drop-down-directory {
+  display: flex;
 }
 
 .drop-down-directory__item {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   font-family: var(--common-OpenSans);
   font-size: 15px;
   line-height: 20px;
@@ -286,6 +304,9 @@ a {
 
 .drop-down-directory__item a {
   color: var(--basic-black);
+  font-family: var(--common-OpenSans);
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /* СЛАЙДЕР */
@@ -474,7 +495,7 @@ a {
   grid-template-rows: 1fr;
   grid-template-areas: "features-buttons__list features__item-active ";
   margin-top: 42px;
-  padding-right:300px ;
+  padding-right: 300px;
   column-gap: 207px;
 }
 
@@ -658,7 +679,7 @@ a {
   grid-area: main-footer__social-buttons;
 }
 
-.main-footer__contacts, .main-footer__contacts > a {
+.main-footer__contacts, .main-footer__contacts>a {
   font-family: var(--common-OpenSans);
   color: var(--basic-white);
   opacity: 70%;
@@ -902,12 +923,12 @@ a {
 }
 
 .product-buttons:hover {
-  background: rgba(238, 238, 238, 0.7);
+  background: var(--button-background);
   opacity: 100%;
 }
 
 .products-list__button:hover {
-  background-color: #91C92F;
+  background-color: var(--special-yellow-dark);
 }
 
 .products-pages {
@@ -947,7 +968,7 @@ a {
   margin-left: auto;
 }
 
-.products-pages > a:visited {
+.products-pages>a:visited {
   color: var(--basic-black)
 }
 
